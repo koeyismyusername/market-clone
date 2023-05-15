@@ -26,6 +26,10 @@ footer > .menu:active {
 }
 footer > .menu > .icon {
   font-size: 36px;
+  transition: scale 0.3s ease-out;
+}
+footer > .menu:hover > .icon {
+  scale: 120%;
 }
 footer > .menu > .text {
   font-size: 12px;
