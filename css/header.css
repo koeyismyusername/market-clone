@@ -1,0 +1,32 @@
+header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+header > .location {
+  display: flex;
+  align-items: center;
+}
+header > .location > .text {
+  font-weight: 700;
+  font-size: 24px;
+  white-space: nowrap;
+}
+header > .location > .expand-more {
+  font-size: 32px;
+}
+header > .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header > .icons > span:nth-child(n) {
+  margin-right: 10px;
+  font-size: 28px;
+}
+header > .icons > span:last-child {
+  margin-right: 0px;
+}

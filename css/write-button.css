@@ -1,0 +1,19 @@
+#write-button {
+  color: white;
+  background-color: orange;
+  font-size: 20px;
+  font-weight: 700;
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  height: 60px;
+  border-radius: 30px;
+}
+#write-button > .text {
+  white-space: nowrap;
+}

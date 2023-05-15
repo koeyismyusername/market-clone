@@ -1,0 +1,24 @@
+footer {
+  padding: 10px;
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid lightgray;
+}
+footer > .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 64px;
+  flex-grow: 1;
+}
+footer > .menu > .icon {
+  font-size: 36px;
+}
+footer > .menu > .text {
+  font-size: 12px;
+}

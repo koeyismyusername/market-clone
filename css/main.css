@@ -1,0 +1,49 @@
+main {
+  padding: 10px;
+}
+main > .wrapper > .item {
+  display: flex;
+  align-items: center;
+}
+main > .wrapper .image {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+main > .wrapper .contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 120px;
+  padding: 10px 0px 10px 10px;
+  flex-grow: 1;
+}
+main > .wrapper .contents > .title {
+  font-weight: 700;
+  font-size: 16px;
+}
+main > .wrapper .contents > .sub-info {
+  display: flex;
+  align-items: center;
+  color: gray;
+  font-size: 12px;
+}
+main > .wrapper .contents > .sub-info > span:nth-child(2) {
+  margin: 0 5px;
+}
+main > .wrapper .contents > .price {
+  font-weight: 700;
+  font-size: 24px;
+}
+main > .wrapper .contents > .comunity {
+  display: flex;
+  justify-content: end;
+  align-content: center;
+  color: lightgray;
+}
+main > .wrapper .contents > .comunity > span:nth-child(n) {
+  font-size: 16px;
+  margin-right: 5px;
+}
