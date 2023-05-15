@@ -1,0 +1,22 @@
+#curtain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: tomato;
+  opacity: 1;
+  color: white;
+  font-weight: 800;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 300px) {
+  #curtain {
+    opacity: 0;
+    display: none;
+  }
+}
