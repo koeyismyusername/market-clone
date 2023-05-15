@@ -14,6 +14,12 @@
   height: 60px;
   border-radius: 30px;
 }
+#write-button:hover {
+  cursor: pointer;
+}
+#write-button:active {
+  background-color: rgb(255, 136, 0);
+}
 #write-button > .text {
   white-space: nowrap;
 }

@@ -10,6 +10,9 @@ header > .location {
   display: flex;
   align-items: center;
 }
+header > .location:hover {
+  cursor: pointer;
+}
 header > .location > .text {
   font-weight: 700;
   font-size: 24px;
@@ -23,9 +26,12 @@ header > .icons {
   justify-content: center;
   align-items: center;
 }
-header > .icons > span:nth-child(n) {
+header > .icons > span {
   margin-right: 10px;
   font-size: 28px;
+}
+header > .icons > span:hover {
+  cursor: pointer;
 }
 header > .icons > span:last-child {
   margin-right: 0px;

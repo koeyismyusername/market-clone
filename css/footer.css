@@ -1,5 +1,4 @@
 footer {
-  padding: 10px;
   position: sticky;
   bottom: 0;
   background-color: white;
@@ -9,12 +8,21 @@ footer {
   border-top: 1px solid lightgray;
 }
 footer > .menu {
+  height: 60px;
+  padding: 10px 0px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-basis: 64px;
   flex-grow: 1;
+}
+footer > .menu:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+footer > .menu:active {
+  background-color: rgb(180, 180, 180);
 }
 footer > .menu > .icon {
   font-size: 36px;

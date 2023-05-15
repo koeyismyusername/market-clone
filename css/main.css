@@ -1,9 +1,9 @@
 main {
-  padding: 10px;
 }
 main > .wrapper > .item {
   display: flex;
   align-items: center;
+  padding: 10px;
 }
 main > .wrapper .image {
   width: 120px;
@@ -12,17 +12,24 @@ main > .wrapper .image {
   flex-shrink: 0;
   object-fit: cover;
 }
+main > .wrapper .image:hover {
+  cursor: pointer;
+}
 main > .wrapper .contents {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 120px;
   padding: 10px 0px 10px 10px;
+  box-sizing: border-box;
   flex-grow: 1;
 }
 main > .wrapper .contents > .title {
   font-weight: 700;
   font-size: 16px;
+}
+main > .wrapper .contents > .title:hover {
+  cursor: pointer;
 }
 main > .wrapper .contents > .sub-info {
   display: flex;
@@ -43,7 +50,14 @@ main > .wrapper .contents > .comunity {
   align-content: center;
   color: lightgray;
 }
-main > .wrapper .contents > .comunity > span:nth-child(n) {
+main > .wrapper .contents > .comunity > div {
+  display: flex;
+  align-items: center;
+}
+main > .wrapper .contents > .comunity > div:hover {
+  cursor: pointer;
+}
+main > .wrapper .contents > .comunity span {
   font-size: 16px;
   margin-right: 5px;
 }
