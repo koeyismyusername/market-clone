@@ -1,4 +1,9 @@
 main {
+  display: flex;
+  justify-content: center;
+}
+main > .wrapper {
+  flex-basis: 800px;
 }
 main > .wrapper > .item {
   display: flex;
