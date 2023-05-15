@@ -9,6 +9,10 @@ main > .wrapper > .item {
   display: flex;
   align-items: center;
   padding: 10px;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.15);
+}
+main > .wrapper > .item:last-child {
+  border-bottom: none;
 }
 main > .wrapper .image {
   width: 120px;
