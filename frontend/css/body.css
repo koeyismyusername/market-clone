@@ -3,3 +3,6 @@ body {
   min-width: 480px;
   box-sizing: border-box;
 }
+a {
+  text-decoration-line: none;
+}
