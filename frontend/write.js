@@ -4,8 +4,16 @@ form.addEventListener("submit", handleSubmitForm);
 
 function handleSubmitForm(event) {
   event.preventDefault();
-  fetch("/items", {
-    method: "POST",
-    body: new FormData(form),
-  }).then(console.log("hello!"));
+  try {
+    fetch("/items", {
+      method: "POST",
+      body: new FormData(form),
+    })
+      .then((value) => value.json())
+      .then((res) => {
+        if (res === "200") location.pathname = "/";
+      });
+  } catch (e) {
+    console.erroe(e);
+  }
 }
