@@ -1,12 +1,14 @@
 function getElapsedTime(overDate) {
   if (overDate.getUTCFullYear() - 1970 >= 1)
-    return `${overDate.getUTCFullYear() - 1970}년`;
-  if (overDate.getUTCMonth() - 1 >= 1) return `${overDate.getUTCMonth() - 1}월`;
-  if (overDate.getUTCDate() - 1 >= 1) return `${overDate.getUTCDate() - 1}일`;
-  if (overDate.getUTCHours() >= 1) return `${overDate.getUTCHours()}시간`;
-  if (overDate.getUTCMinutes() >= 1) return `${overDate.getUTCMinutes()}분`;
-  if (overDate.getUTCSeconds() >= 1) return `${overDate.getUTCSeconds()}초`;
-  return "방금";
+    return `${overDate.getUTCFullYear() - 1970}년 전`;
+  if (overDate.getUTCMonth() - 1 >= 1)
+    return `${overDate.getUTCMonth() - 1}월 전`;
+  if (overDate.getUTCDate() - 1 >= 1)
+    return `${overDate.getUTCDate() - 1}일 전`;
+  if (overDate.getUTCHours() >= 1) return `${overDate.getUTCHours()}시간 전`;
+  if (overDate.getUTCMinutes() >= 1) return `${overDate.getUTCMinutes()}분 전`;
+  if (overDate.getUTCSeconds() >= 1) return `${overDate.getUTCSeconds()}초 전`;
+  return "방금 전";
 }
 
 function renderData(data) {
@@ -29,7 +31,7 @@ function renderData(data) {
       <div class="sub-info">
         <span class="location">${obj.place}</span>
         <span>·</span>
-        <span class="time">${getElapsedTime(overDate)} 전</span>
+        <span class="time">${getElapsedTime(overDate)}</span>
       </div>
       <div class="price">${obj.price.toLocaleString("ko-KR")}원</div>
       <div class="comunity">
