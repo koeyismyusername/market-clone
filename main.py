@@ -9,7 +9,7 @@ con = sqlite3.connect("./database.db", check_same_thread=False)
 cur = con.cursor()
 
 cur.execute(f"""
-            CREATE TABLE Items (
+            CREATE TABLE IF NOT EXISTS Items (
               itemID INTEGER PRIMARY KEY,
               title TEXT NOT NULL,
               price INTEGER NOT NULL,
