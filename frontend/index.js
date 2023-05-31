@@ -14,16 +14,20 @@ function getElapsedTime(overDate) {
 function renderData(data) {
   const list = document.querySelector("main>.wrapper");
 
-  data.forEach((obj) => {
+  data.forEach(async (obj) => {
     const item = document.createElement("li");
     list.appendChild(item);
     item.className = "item";
     const overDate = new Date(new Date().getTime() - obj.insertAt);
 
+    let url = await fetch(`images/${obj.itemID}`)
+      .then((res) => res.blob())
+      .then((blob) => URL.createObjectURL(blob));
+
     // 이미지 추가는 일단 생략
     item.innerHTML = `<img
-      src="https://th.bing.com/th/id/OIP.JWQUUG1FfHqOEGA5vrvj4AHaHa?w=204&h=204&c=7&r=0&o=5&pid=1.7"
-      alt="대충 레깅스 사진"
+      src="${url}"
+      alt=""
       class="image"
     />
     <div class="contents">
@@ -53,8 +57,6 @@ function renderData(data) {
 async function fetchList() {
   const res = await fetch("/items");
   const data = await res.json();
-
-  console.log(data);
   renderData(data);
 }
 
