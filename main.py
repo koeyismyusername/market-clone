@@ -1,4 +1,4 @@
-from fastapi import FastAPI,UploadFile,Form
+from fastapi import FastAPI,UploadFile,Form, Response
 from fastapi.responses import JSONResponse
 from fastapi.encoders import jsonable_encoder
 from fastapi.staticfiles import StaticFiles
@@ -38,5 +38,14 @@ def get_Items():
                         """).fetchall()
   
   return JSONResponse(jsonable_encoder(dict(record) for record in records))
+
+@app.get("/images/{item_id}")
+async def get_image(item_id):
+  cur = con.cursor()
+  image_bytes = cur.execute(f"""
+                            SELECT image FROM Items
+                            WHERE itemID={item_id}
+                            """).fetchone()[0]
+  return Response(bytes.fromhex(image_bytes))
 
 app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")
