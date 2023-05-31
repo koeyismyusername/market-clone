@@ -4,10 +4,12 @@ form.addEventListener("submit", handleSubmitForm);
 
 function handleSubmitForm(event) {
   event.preventDefault();
+  const body = new FormData(form);
+  body.append("insertAt", new Date().getTime());
   try {
     fetch("/items", {
       method: "POST",
-      body: new FormData(form),
+      body: body,
     })
       .then((value) => value.json())
       .then((res) => {
