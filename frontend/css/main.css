@@ -4,6 +4,9 @@ main {
 }
 main > .wrapper {
   flex-basis: 800px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: start;
 }
 main > .wrapper > .item {
   display: flex;
