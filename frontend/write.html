@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>내 물건 팔기</title>
+    <!-- js -->
+    <script defer src="./write.js"></script>
+  </head>
+  <body>
+    <form id="write-form">
+      <div>
+        <label for="image">이미지</label>
+        <input type="file" name="image" id="image" />
+      </div>
+      <div>
+        <label for="title">제목</label>
+        <input required type="text" name="title" id="title" />
+      </div>
+      <div>
+        <label for="price">가격</label>
+        <input required type="number" name="price" id="price" />
+      </div>
+      <div>
+        <label for="description">설명</label>
+        <input type="text" name="description" id="description" />
+      </div>
+      <div>
+        <label for="place">거래 장소</label>
+        <input required type="text" name="place" id="place" />
+      </div>
+      <div>
+        <button type="submit">제출</button>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KoeyMarket</title>
+    <!-- css 리셋 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 구글 아이콘 -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <!-- css 링크 -->
+    <link rel="stylesheet" href="css/body.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/write-button.css" />
+    <link rel="stylesheet" href="css/curtain.css" />
+    <!-- js -->
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <!-- 상단 바 -->
+    <header>
+      <div class="location">
+        <span class="text">역삼1동</span>
+        <span class="material-icons-outlined expand-more"> expand_more </span>
+      </div>
+      <div class="icons">
+        <span class="material-icons-outlined search"> search </span>
+        <span class="material-icons-outlined menu"> menu </span>
+        <span class="material-icons-outlined notifications">
+          notifications
+        </span>
+      </div>
+    </header>
+    <!-- 메인 컨텐츠 -->
+    <main>
+      <ul class="wrapper"></ul>
+    </main>
+    <!-- 하단 메뉴바 -->
+    <footer>
+      <div class="menu home">
+        <span class="icon material-icons-outlined"> home </span>
+        <span class="text">홈</span>
+      </div>
+      <div class="menu feed">
+        <span class="icon material-icons-outlined"> feed </span>
+        <span class="text">동네생활</span>
+      </div>
+      <div class="menu around">
+        <span class="icon material-icons-outlined"> place </span>
+        <span class="text">내 근처</span>
+      </div>
+      <div class="menu chat">
+        <span class="icon material-icons-outlined"> forum </span>
+        <span class="text">채팅</span>
+      </div>
+      <div class="menu mine">
+        <span class="icon material-icons-outlined"> person </span>
+        <span class="text">나의 당근</span>
+      </div>
+    </footer>
+    <!-- 글쓰기 버튼 -->
+    <a href="./write.html" id="write-button">+ 글쓰기</a>
+    <!-- 화면 가리개 -->
+    <div id="curtain">화면이<br />너무<br />작아용</div>
+  </body>
+</html>
