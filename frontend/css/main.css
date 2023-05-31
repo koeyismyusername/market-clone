@@ -1,6 +1,7 @@
 main {
   display: flex;
   justify-content: center;
+  min-height: 100vh;
 }
 main > .wrapper {
   flex-basis: 800px;
